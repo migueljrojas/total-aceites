@@ -1,3 +1,146 @@
 .home {
+  width: 100%;
+  min-height: 100vh;
+  background: url('/images/background.jpg') no-repeat center 100px / cover;
+  position: relative;
+  padding-top: 100px;
+  
+  &__triangles {
+      background: url("/images/triangles.png") no-repeat center top / cover;
+
+      position: absolute;
+      width: 100%;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+    }
+
+  &__hero {
+    width: 100%;
+    position: relative;
+    padding-bottom: 100px;
     
+    &__wrapper {
+      position: relative;
+      width: 60%;
+    }
+
+    &__products {
+      padding-top: 40px;
+      width: 65%;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    &__banner {
+      position: absolute;
+      top: 210px;
+      width: 115%;
+      left: -7.5%;
+
+      z-index: 5;
+    }
+
+    &__cta {
+      position: relative;
+      width: 50%;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      background: $white;
+      padding: 40px 20px;
+      z-index: 10;
+      margin-top: 120px;
+      border-radius: 5px;
+      box-shadow: 0 0px 30px 30px rgba(0,0,0,.06);
+    }
+
+    &__cta-input {
+      width: 100%;
+      text-align: center;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+      border-radius: 5px;
+      background: $lightGray;
+      border: none;
+      padding: 10px 0;
+      font-size: 16px;
+      font-weight: 500;
+
+      &:focus,
+      &:active,
+      &:hover {
+        outline: none;
+      }
+    }
+
+    &__cta-button {
+      @include trans;
+
+      display: block;
+      width: 100%;
+      background: $green;
+      border: none;
+      color: $white;
+      padding: 10px 0;
+      font-size: 24px;
+      text-transform: uppercase;
+      border-radius: 5px;
+      font-weight: 500;
+      letter-spacing: 2px;
+
+      &:focus,
+      &:active,
+      &:hover {
+        outline: none;
+        background: $green - #333;
+      }    
+    }
+
+    &__bottles {
+      position: absolute;
+      right: 10%;
+      top: 40px;
+      height: 500px;
+    }
+
+    &__city-logo {
+      position: absolute;
+      top: 550px;
+      right: 15%;
+      width: 400px;
+    }
+  }
+
+  &__como-participar {
+    position: relative;
+    background: $white;
+    z-index: 20;
+    padding: 40px 0;
+
+    &__title {
+      color: $red;
+      text-transform: uppercase;
+      text-align: center;
+      margin-top: 0;
+      margin-bottom: 40px;
+      font-weight: 900;
+      font-size: 40px;
+    }
+
+    &__step {
+      display: flex;
+    }
+
+    &__index {
+      width: 20%;
+      background: url('/images/')
+    }
+
+    &__text {
+      width: 80%;
+    }
+  }
 }

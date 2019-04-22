@@ -2,3 +2,31 @@ extends _layouts/base
 
 block content
     main.home
+        .home__triangles
+        .container
+            section.home__hero
+                .home__hero__wrapper
+                    img.home__hero__products(src="/images/premios.png")
+                    img.home__hero__banner(src="/images/title-banner.png")
+                    form.home__hero__cta
+                        input.home__hero__cta-input(type="text" placeholder="ingresá tu número de cliente")
+                        button.home__hero__cta-button participá ahora
+                img.home__hero__bottles(src="/images/bombonas.png")
+                img.home__hero__city-logo(src="/images/citygas.png")
+        section.home__como-participar
+            .container
+                .row
+                    .col-xs-24
+                        h2.home__como-participar__title  ¿cómo participar?
+                    .col-xs-24.col-md-8
+                        .home__como-participar__step
+                            span.home__como-participar__index 1
+                            p.home__como-participar__text Por cada compra de garrafas o cilindros el repartidor te va a entregar un cupón donde vas a encontrar un código alfanumérico único.
+                    .col-xs-24.col-md-8
+                        .home__como-participar__step
+                            span.home__como-participar__index 2
+                            p.home__como-participar__text Debes ingresar en esta página cada uno de los cupones recibiedos para participar por los premios. Recordá tener a mano tu número de cliente. Si no lo recordás podés llamar al 0800-888-2849.
+                    .col-xs-24.col-md-8
+                        .home__como-participar__step
+                            span.home__como-participar__index 3
+                            p.home__como-participar__text En el momento vas a saber si ganaste uno de los cientos de premios instantáneos y tus cupones ya quedarán inscriptos para participar de los sorteos por los demás premios.
