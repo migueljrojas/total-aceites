@@ -1,0 +1,142 @@
+.listado-ganadores {
+  padding-top: 80px;
+  background: url('/images/background.jpg') no-repeat center 80px / cover;
+
+  @include mq(md) {
+    padding-top: 100px;
+    background: url('/images/background.jpg') no-repeat center 100px / cover;
+  }
+
+  &__heading {
+    display: flex;
+    padding: 80px 0 40px 0;
+  }
+
+  &__image {
+    width: 30%;
+    margin: 0 5%;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &__wrapper {
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  &__title {
+    color: $black;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin: 0;
+
+    br {
+      @include mq(md) {
+        display: none;
+      }
+    }
+
+    span {
+      color: $red;
+      font-weight: 500;
+    }
+  }
+
+  &__button {
+    border: none;
+    padding: 5px 10px;
+    text-transform: uppercase;
+    color: $white;
+    font-size: 14px;
+    background: $darkGray;
+    border-radius: 5px;
+  }
+  
+  &__container {
+    padding: 20px;
+    background: $white;
+    border-radius: 5px;
+    box-shadow: 0 10px 30px 45px rgba(0,0,0,.05);
+    margin: 20px 0 60px 0;
+    position: relative;
+  
+    @include mq(md) {
+      margin: 0 0 60px 0;
+      padding: 40px 80px 20px 80px;
+    }
+  }
+
+  &__table {
+    display: flex;
+  }
+  
+  &__table-col {
+    &--left {
+      width: 35%;
+      margin-right: 5%;
+    }
+
+    &--right {
+      width: 60%;
+    }
+  }
+
+  &__cell {
+    margin-bottom: 20px;
+
+    h3 {
+      text-transform: uppercase;
+      font-size: 16px;
+      font-weight: 900;
+      color: $darkGray;
+      margin: 0;
+    }
+
+    p {
+      margin: 0;
+      color: $darkGray;
+      font-weight: 500;
+      font-size: 14px;
+    }
+
+    span {
+      color: $darkGray;
+      font-weight: 500;
+      font-size: 14px;
+      display: block;
+    }
+
+    &--heading {
+      display: none;
+
+      @include mq(md) {
+        display: block;
+      }
+    }
+  }
+
+  &__back-to-top {
+    position: absolute;
+    bottom: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: $darkGray;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    i {
+      font-size: 36px;
+      color: $white;
+    }
+  }
+}

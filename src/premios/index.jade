@@ -1,0 +1,42 @@
+extends ../_layouts/base
+
+block config
+  //- Correct base url pathing for this page
+  - var baseUrl = '../'
+
+block content
+  main.premios
+    .container
+      .row
+        .col-xs-24.col-md-20.col-md-offset-2
+          .premios__container
+            h2 premios y ganadores
+            .row
+              .col-xs-12.col-md-6
+                .premios__wrapper
+                  .premios__image
+                    img(src="/images/gorra.png")
+                  .premios__group
+                    p.premios__text TV LED 4K 50''
+                    a.premios__button.premios__button--disabled(href="#") sortea el 30/6
+              .col-xs-12.col-md-6
+                .premios__wrapper
+                  .premios__image
+                    img(src="/images/gorra.png")
+                  .premios__group
+                    p.premios__text PlayStation 4
+                    a.premios__button(href="#") ver ganadores
+              .col-xs-12.col-md-6
+                .premios__wrapper
+                  .premios__image
+                    img(src="/images/gorra.png")
+                  .premios__group
+                    p.premios__text Heladera No Frost
+                    a.premios__button(href="#") ver ganadores
+              .col-xs-12.col-md-6
+                .premios__wrapper
+                  .premios__image
+                    img(src="/images/gorra.png")
+                  .premios__group
+                    p.premios__text Gorra TOTAL
+                    a.premios__button(href="#") ver ganadores

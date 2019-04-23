@@ -1,3 +1,48 @@
 .footer {
-    
+  background: $lightGray;
+  padding: 40px 0;
+
+  &__wrapper {
+    text-align: center;
+
+    @include mq(md) {
+      text-align: auto;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &__links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+
+    @include mq(md) {
+      margin-bottom: 0;
+    }
+
+    li {
+      &:not(:last-child) {
+        margin-right: 20px;
+      }
+    }
+
+    a {
+      text-transform: uppercase;
+    }
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__text {
+    margin: 0;
+    margin-right: 20px;
+    text-transform: uppercase;
+    font-size: 14px;
+  }
 }

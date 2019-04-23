@@ -1,0 +1,25 @@
+extends ../_layouts/base
+
+block config
+  //- Correct base url pathing for this page
+  - var baseUrl = '../'
+
+block content
+  main.registro-cupon
+    .registro-cupon__triangles
+    .container
+      .row
+        .col-xs-24.col-md-12.col-md-offset-6
+          section.registro-cupon__hero
+            .registro-cupon__hero__wrapper
+              img.registro-cupon__hero__banner(src="/images/title-banner.png")
+              form.registro-cupon__hero__cta
+                p.registro-cupon__hero__cta-text Hola Facundo,
+                p.registro-cupon__hero__cta-text ¿tenés un cupón para participar?
+                p.registro-cupon__hero__cta-text.registro-cupon__hero__cta-text--dark Ingresalo a continuación
+                label.registro-cupon__hero__label
+                  i.fa.fa-exclamation-triangle
+                  span el cupon no es válido
+                input.registro-cupon__hero__cta-input(type="text" placeholder="número de cupón")
+                button.registro-cupon__hero__cta-button enviar
+            img.registro-cupon__hero__city-logo(src="/images/citygas.png")

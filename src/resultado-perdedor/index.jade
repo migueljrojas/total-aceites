@@ -1,0 +1,23 @@
+extends ../_layouts/base
+
+block config
+  //- Correct base url pathing for this page
+  - var baseUrl = '../'
+
+block content
+  main.registro-cupon
+    .registro-cupon__triangles
+    .container
+      .row
+        .col-xs-24.col-md-12.col-md-offset-6
+          section.registro-cupon__hero
+            .registro-cupon__hero__wrapper
+              img.registro-cupon__hero__banner(src="/images/title-banner-loser.png")
+              .registro-cupon__hero__cta
+                p.registro-cupon__hero__cta-text.registro-cupon__hero__cta-text--separation Esta vez no ganaste, pero no te preocupes, igual participás poe lois sorteos de los grandes premios.
+                p.registro-cupon__hero__cta-text.registro-cupon__hero__cta-text--big
+                  span ¿Tenés mas cupones?
+                  br
+                  | Seguí probando tu suerte
+                button.registro-cupon__hero__cta-button ingresar otro cupón
+              img.registro-cupon__hero__city-logo(src="/images/citygas.png")
