@@ -82,5 +82,10 @@
     &--disabled {
       background: $midGray;
     }
+
+    &:hover {
+      color: $white;
+      background: darken($green, 10%);
+    }
   }
 }

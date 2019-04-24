@@ -56,6 +56,11 @@
     font-size: 14px;
     background: $darkGray;
     border-radius: 5px;
+
+    &:hover {
+      color: $white;
+      background: lighten($darkGray, 10%);
+    }
   }
   
   &__container {
