@@ -26,11 +26,13 @@
       text-transform: uppercase;
       font-weight: 900;
       text-align: center;
+      margin-bottom: 40px;
     }
   }
 
   &__wrapper {
     margin-bottom: 20px;
+    position: relative;
 
     @include mq(md) {
       padding: 0 25px;
@@ -38,18 +40,42 @@
     }
   }
 
+  &__premio-instantaneo {
+    position: absolute;
+    top: 0;
+    display: flex;
+    border-bottom: 2px solid $lightGray;
+    padding-bottom: 10px;
+    background: $white;
+    
+    @include mq(md) {
+      width: calc(100% - 50px);
+
+    }
+
+    p {
+      font-size: 18px;
+      color: $darkGray;
+      text-transform: uppercase;
+      margin: 0;
+      line-height: 1;
+    }
+
+    i {
+      margin-right: 5px;
+      font-size: 30px;
+      color: yellow;
+    }
+  }
+
   &__image {
     width: 100%;
-    height: 150px;
+    height: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 20px;
 
-
-    @include mq(md) {
-      height: 200px;
-    }
 
     img {
       max-width: 100%;
@@ -81,6 +107,7 @@
   
     &--disabled {
       background: $midGray;
+      pointer-events: none;
     }
 
     &:hover {
